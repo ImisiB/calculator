@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../style/calculator.css">
+    <script src="../javascript/calculator.js"></script>
+  </head>
+  <body>
+    <p class="js-result result">0</p>
+
+    <p>
+      <button class="numberButton" onclick="
+        calculation += '1';
+        answer();
+        ">1</button>
+      <button class="numberButton" onclick="
+        calculation += '2';
+        answer();
+        ">2</button>
+      <button class="numberButton" onclick="
+        calculation += '3';
+        answer();
+      ">3</button>
+      <button class="valueButton" onclick="
+        calculation += ' + ';
+        answer();
+      ">+</button>
+    </p>
+
+    
+    <p>
+      <button class="numberButton" onclick="
+        calculation += '4';
+        answer();
+      ">4</button>
+      <button class="numberButton" onclick="
+        calculation += '5';
+        answer();
+      ">5</button>
+      <button class="numberButton" onclick="
+        calculation += '6';
+        answer();
+      ">6</button>
+      <button class="valueButton" onclick="
+        calculation += ' - ';
+        answer();
+      ">-</button>
+    </p>
+
+    
+    <p>
+      <button class="numberButton" onclick="
+        calculation += '7';
+        answer();
+      ">7</button>
+      <button class="numberButton" onclick="
+        calculation += '8';
+        answer();
+      ">8</button>
+      <button class="numberButton" onclick="
+        calculation += '8';
+        answer();
+      ">9</button>
+      <button class="valueButton" onclick="
+        calculation += ' * ';
+        answer();
+      ">*</button>
+    </p>
+
+    
+    <p>
+      <button class="numberButton" onclick="
+        calculation += '0';
+        answer();
+      ">0</button>
+      <button class="numberButton" onclick="
+        calculation += '.';
+        answer();
+      ">.</button>
+      <button class="numberButton" onclick="
+        calculation = eval(calculation);
+        calcResult();
+        answer();
+">=</button>
+      <button class="valueButton"  onclick="
+        calculation += ' / ';
+        answer();
+      ">/</button>
+    </p>
+
+    <button class="clearButton" onclick="
+    calculation = '0';
+        answer();
+        localStorage.setItem('answers', '')
+    ">clear</button>
+
+
+  </body>
+</html>
