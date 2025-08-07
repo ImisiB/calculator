@@ -6,7 +6,7 @@ console.log(oldResult);
 
 
 document.querySelector('.result')
-  .innerHTML = 32;
+  .innerHTML = oldResult;
 
 
 function answer() {
