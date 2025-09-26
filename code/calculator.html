@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../style/calculator.css">
   </head>
   <body>
-    <p class="js-result result">0</p>
+    <p class="js-result result"></p>
 
     <p>
       <button class="numberButton" onclick="
@@ -57,7 +57,7 @@
         answer();
       ">8</button>
       <button class="numberButton" onclick="
-        calculation += '8';
+        calculation += '9';
         answer();
       ">9</button>
       <button class="valueButton" onclick="
@@ -80,7 +80,7 @@
         calculation = eval(calculation);
         calcResult();
         answer();
-">=</button>
+      ">=</button>
       <button class="valueButton"  onclick="
         calculation += ' / ';
         answer();
@@ -88,7 +88,7 @@
     </p>
 
     <button class="clearButton" onclick="
-    calculation = '0';
+      calculation = '';
         answer();
         localStorage.setItem('answers', '')
     ">clear</button>

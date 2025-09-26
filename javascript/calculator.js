@@ -12,7 +12,6 @@ document.querySelector('.result')
 function answer() {
   document.querySelector('.js-result')
     .innerHTML = calculation;
-
 }
 
 
