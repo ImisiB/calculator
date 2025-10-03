@@ -87,12 +87,27 @@
       ">/</button>
     </p>
 
-    <button class="clearButton" onclick="
+    <p>
+      <button class="clearButton" onclick="
       calculation = '';
-        answer();
-        localStorage.setItem('answers', '')
+      answer();
+      localStorage.setItem('answers', '')
     ">clear</button>
+      <button class="valueButton" onclick="
+        calculation += '<';
+        answer();
+      "><</button>
+      <button class="valueButton" onclick="
+        calculation += '>';
+        answer();
+      ">></button>
+      <button class="valueButton" onclick="
+        calculation += '===';
+        answer();
+      ">=</button>
 
+    
+    </p>
     <script src="../javascript/calculator.js"></script>
   </body>
 </html>
