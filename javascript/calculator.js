@@ -48,6 +48,9 @@ document.querySelector('body').addEventListener('keydown', (event) => {
   } else if(event.key === '9') {
     calculation += '9';
     answer();
+  } else if(event.key === '0') {
+    calculation += '0';
+    answer();
   } else if(event.key === '+') {
     calculation += ' + ';
     answer();
